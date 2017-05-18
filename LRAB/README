@@ -1,0 +1,5 @@
+1) ./class 22 -a 92 -i eth0 -s 10
+2) ./g
+3) ./update 1200
+4) ./dup
+5) perl w.pl vuln
